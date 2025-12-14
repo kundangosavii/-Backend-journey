@@ -13,4 +13,16 @@ const ConnectDB = async ()=>{
     }
 };
 
+// Just experiment
+// const ConnectDB = new Promise((resolve, reject) => {
+//     resolve(
+//         mongoose.connect(`${process.env.MONGODB_URL}/${DB_Name}`),
+//         console.log("connected")
+//     )
+//     if(error){
+//         reject(console.log("MONGODB CONNECTION FAILED: ",error))
+//     }
+// })
+
 export default ConnectDB;
+
